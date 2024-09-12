@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecetasFáciles</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" data-filter="all">Todos</a></li>
+                <li><a href="#" data-filter="Entrantes">Entrantes</a></li>
+                <li><a href="#" data-filter="Platos Principales">Platos Principales</a></li>
+                <li><a href="#" data-filter="Postres">Postres</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="search-bar">
+            <input type="text" placeholder="Buscar recetas...">
+        </section>
+        <section class="recipe-grid">
+            <!-- Tarjetas de recetas -->
+            <div class="recipe-card" data-category="Postres">
+                <img src="brownies.webp" alt="Brownie">
+                <h3>Brownie de Chocolate</h3>
+                <p>Brownie denso y chocolatoso, perfecto para los amantes del chocolate.</p>
+                <button>Ver Receta</button>
+                <div class="recipe-details" style="display: none;">
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>200g de chocolate negro</li>
+                        <li>150g de mantequilla</li>
+                        <li>200g de azúcar</li>
+                        <li>3 huevos</li>
+                        <li>100g de harina</li>
+                        <li>Una pizca de sal</li>
+                    </ul>
+                    <h4>Instrucciones:</h4>
+                    <p>1. Derrite el chocolate con la mantequilla. <br>
+                       2. Mezcla el azúcar y los huevos. <br>
+                       3. Añade la mezcla de chocolate y mantequilla. <br>
+                       4. Incorpora la harina y la sal. <br>
+                       5. Hornea a 180°C durante 25 minutos.</p>
+                </div>
+            </div>
+            <div class="recipe-card" data-category="Entrantes">
+                <img src="bruschetta.jpeg" alt="Bruschetta">
+                <h3>Bruschetta</h3>
+                <p>Rebanadas de pan tostado con tomate, albahaca y ajo.</p>
+                <button>Ver Receta</button>
+                <div class="recipe-details" style="display: none;">
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>Pan de baguette</li>
+                        <li>Tomates maduros</li>
+                        <li>Albahaca fresca</li>
+                        <li>Ajo</li>
+                        <li>Aceite de oliva</li>
+                        <li>Sal y pimienta</li>
+                    </ul>
+                    <h4>Instrucciones:</h4>
+                    <p>1. Tuesta el pan. <br>
+                       2. Frota con ajo. <br>
+                       3. Mezcla tomates picados con albahaca y aceite de oliva. <br>
+                       4. Añade sobre el pan y sazona.</p>
+                </div>
+            </div>
+            <div class="recipe-card" data-category="Postres">
+                <img src="cheesecake.jpeg" alt="Cheesecake">
+                <h3>Cheesecake de Fresa</h3>
+                <p>Cheesecake suave con una base de galleta y cobertura de fresa.</p>
+                <button>Ver Receta</button>
+                <div class="recipe-details" style="display: none;">
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>200g de galletas</li>
+                        <li>100g de mantequilla</li>
+                        <li>500g de queso crema</li>
+                        <li>200g de azúcar</li>
+                        <li>3 huevos</li>
+                        <li>200g de fresas</li>
+                        <li>150g de mermelada de fresa</li>
+                    </ul>
+                    <h4>Instrucciones:</h4>
+                    <p>1. Tritura las galletas y mezcla con mantequilla derretida. <br>
+                       2. Presiona la mezcla en el fondo de un molde. <br>
+                       3. Mezcla el queso crema con azúcar y huevos. <br>
+                       4. Vierte sobre la base y hornea a 160°C durante 50 minutos. <br>
+                       5. Deja enfriar y cubre con mermelada de fresa y fresas.</p>
+                </div>
+            </div>
+            <div class="recipe-card" data-category="Entrantes">
+                <img src="guacamole.jpg" alt="Guacamole">
+                <h3>Guacamole</h3>
+                <p>Guacamole fresco con aguacate, tomate y cilantro.</p>
+                <button>Ver Receta</button>
+                <div class="recipe-details" style="display: none;">
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>2 aguacates maduros</li>
+                        <li>1 tomate</li>
+                        <li>Cilantro fresco</li>
+                        <li>1 cebolla pequeña</li>
+                        <li>Jugo de 1 limón</li>
+                        <li>Sal y pimienta</li>
+                    </ul>
+                    <h4>Instrucciones:</h4>
+                    <p>1. Machaca los aguacates. <br>
+                       2. Mezcla con tomate picado, cebolla y cilantro. <br>
+                       3. Añade jugo de limón, sal y pimienta al gusto.</p>
+                </div>
+            </div>
+            <div class="recipe-card" data-category="Platos Principales">
+                <img src="paella valenciana.jpg" alt="Paella">
+                <h3>Paella Valenciana</h3>
+                <p>Paella tradicional con mariscos, pollo y verduras.</p>
+                <button>Ver Receta</button>
+                <div class="recipe-details" style="display: none;">
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>300g de arroz</li>
+                        <li>200g de pollo</li>
+                        <li>200g de mariscos variados</li>
+                        <li>1 pimiento rojo</li>
+                        <li>1 pimiento verde</li>
+                        <li>200g de guisantes</li>
+                        <li>1 litro de caldo de pollo</li>
+                        <li>Azafrán</li>
+                        <li>Sal y pimienta</li>
+                    </ul>
+                    <h4>Instrucciones:</h4>
+                    <p>1. Sofríe el pollo y los mariscos. <br>
+                       2. Añade pimientos y guisantes. <br>
+                       3. Incorpora el arroz y el caldo. <br>
+                       4. Cocina hasta que el arroz esté tierno y el caldo se haya absorbido.</p>
+                </div>
+            </div>
+            <div class="recipe-card" data-category="Platos Principales">
+                <img src="pasta carbonara.jpeg" alt="Pasta">
+                <h3>Pasta a la Carbonara</h3>
+                <p>Pasta cremosa con tocino y queso parmesano.</p>
+                <button>Ver Receta</button>
+                <div class="recipe-details" style="display: none;">
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>200g de pasta</li>
+                        <li>100g de tocino</li>
+                        <li>2 huevos</li>
+                        <li>100g de queso parmesano</li>
+                        <li>2 dientes de ajo</li>
+                        <li>Sal y pimienta</li>
+                    </ul>
+                    <h4>Instrucciones:</h4>
+                    <p>1. Cocina la pasta al dente. <br>
+                       2. Sofríe el tocino y el ajo. <br>
+                       3. Mezcla huevos y queso parmesano. <br>
+                       4. Combina con la pasta y el tocino. <br>
+                       5. Añade sal y pimienta al gusto.</p>
+                </div>
+            </div>
+            <div class="recipe-card" data-category="Platos Principales">
+                <img src="pizza margherita.jpeg" alt="Pizza">
+                <h3>Pizza Margherita</h3>
+                <p>Pizza con salsa de tomate, mozzarella y albahaca fresca.</p>
+                <button>Ver Receta</button>
+                <div class="recipe-details" style="display: none;">
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>1 masa de pizza</li>
+                        <li>200g de salsa de tomate</li>
+                        <li>150g de mozzarella</li>
+                        <li>Hojas de albahaca fresca</li>
+                        <li>Orégano</li>
+                        <li>Aceite de oliva</li>
+                    </ul>
+                    <h4>Instrucciones:</h4>
+                    <p>1. Extiende la masa y extiende la salsa de tomate. <br>
+                       2. Añade la mozzarella y el orégano. <br>
+                       3. Hornea a 220°C durante 15 minutos. <br>
+                       4. Decora con albahaca y un chorrito de aceite de oliva.</p>
+                </div>
+            </div>
+            <div class="recipe-card" data-category="Platos Principales">
+                <img src="tacos.jpeg" alt="Tacos">
+                <h3>Tacos de Carne</h3>
+                <p>Tacos rellenos de carne sazonada y acompañados de guacamole.</p>
+                <button>Ver Receta</button>
+                <div class="recipe-details" style="display: none;">
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>500g de carne de res molida</li>
+                        <li>1 cebolla</li>
+                        <li>2 dientes de ajo</li>
+                        <li>Especias para tacos</li>
+                        <li>Tortillas de maíz</li>
+                        <li>Guacamole</li>
+                        <li>Salsa</li>
+                    </ul>
+                    <h4>Instrucciones:</h4>
+                    <p>1. Cocina la carne con cebolla y ajo. <br>
+                       2. Añade las especias. <br>
+                       3. Rellena las tortillas con carne, guacamole y salsa.</p>
+                </div>
+            </div>
+            <div class="recipe-card" data-category="Postres">
+                <img src="tarta manzana.jpeg" alt="Tarta">
+                <h3>Tarta de Manzana</h3>
+                <p>Deliciosa tarta de manzana con una masa crujiente.</p>
+                <button>Ver Receta</button>
+                <div class="recipe-details" style="display: none;">
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>250g de harina</li>
+                        <li>125g de mantequilla</li>
+                        <li>100g de azúcar</li>
+                        <li>2 manzanas</li>
+                        <li>1 huevo</li>
+                        <li>Canela en polvo</li>
+                    </ul>
+                    <h4>Instrucciones:</h4>
+                    <p>1. Prepara la masa mezclando harina, mantequilla y azúcar. <br>
+                       2. Extiende la masa en un molde. <br>
+                       3. Cubre con manzanas en rodajas y espolvorea con canela. <br>
+                       4. Hornea a 180°C durante 45 minutos.</p>
+                </div>
+            </div>
+            <div class="recipe-card" data-category="Postres">
+                <img src="tiramisu.jpeg" alt="Tiramisu">
+                <h3>Tiramisu</h3>
+                <p>Postre italiano con capas de café y crema mascarpone.</p>
+                <button>Ver Receta</button>
+                <div class="recipe-details" style="display: none;">
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>250g de queso mascarpone</li>
+                        <li>200g de bizcochos de soletilla</li>
+                        <li>300ml de café expreso</li>
+                        <li>3 huevos</li>
+                        <li>100g de azúcar</li>
+                        <li>Cacao en polvo</li>
+                    </ul>
+                    <h4>Instrucciones:</h4>
+                    <p>1. Mezcla el queso mascarpone con yemas de huevo y azúcar. <br>
+                       2. Bate las claras a punto de nieve y añádelo a la mezcla. <br>
+                       3. Empapa los bizcochos en café y coloca en capas. <br>
+                       4. Refrigera y espolvorea con cacao antes de servir.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 RecetasFáciles. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Modal para mostrar recetas completas -->
+    <div id="recipeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <img id="modalImage" src="" alt="" />
+            <div id="modalDetails"></div>
+        </div>
+    </div>
+
+    <script src="java.js"></script>
+</body>
+</html>
